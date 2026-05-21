@@ -1,0 +1,16 @@
+pandas
+numpy
+openpyxl
+scikit-learn
+scipy
+matplotlib
+seaborn
+tqdm
+requests
+python-dotenv
+openai
+dashscope
+torch
+transformers
+sentence-transformers
+faiss-cpu

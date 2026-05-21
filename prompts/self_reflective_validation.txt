@@ -1,0 +1,67 @@
+Stage1
+
+[Role]
+Political narrative analyst.
+
+[Task]
+Assign the primary ontological security narrative to the following text: Pride, Shame, Denial, Insult, or None.
+
+[Theoretical framing]
+
+1. Conduct the analysis strictly from the narrator’s perspective.
+2. Ontological category cues:
+- Pride: the narrator positively evaluates their own actions, identity, achievements, or moral standing.
+- Shame: the narrator negatively evaluates their own actions, identity, or responsibility, without rejecting that responsibility.
+- Denial: the narrator denies their own action, statement, involvement, or responsibility.
+- Insult: the narrator uses devaluation of others as the primary narrative purpose.
+
+[Text]
+{CORPUS}
+
+[Output instruction]
+- Output only one primary narrative.
+- Provide a confidence score from 0 to 100.
+- Use the following format:
+
+Primary: <type> (confidence: <score>%)
+
+Stage2
+
+[Role]
+Political narrative analyst.
+
+[Context]
+The following text has been initially classified as:
+
+Initial classification: {PRIMARY_L1}
+Initial confidence: {CONF_L1}%
+
+[Task]
+Step back and verify whether the initial classification is theoretically justified.
+Assign the final ontological security narrative to the following text: Pride, Shame, Denial, Insult, or None.
+
+[Analytical Procedure]
+
+1. Identify what the text is responding to, if anything, and how the narrator positions itself in relation to that context.
+2. Examine whether the narrative emphasis lies on rejecting a claim about the narrator, or on characterizing others.
+3. Based on this analysis, assess whether the minimal conditions for {PRIMARY_L1} are satisfied and output the reconsidered classification.
+
+[Theoretical framing]
+
+1. Conduct the analysis strictly from the narrator’s perspective.
+2. Ontological security forms are defined as follows:
+- Pride: the narrator positively evaluates their own actions, identity, achievements, or moral standing.
+- Shame: the narrator negatively evaluates their own actions, identity, or responsibility, without rejecting that responsibility.
+- Denial: the narrator denies their own action, statement, involvement, or responsibility.
+- Insult: the narrator uses devaluation of others as the primary narrative purpose.
+
+[Text]
+{CORPUS}
+
+[Output instruction]
+- Output ONLY the final classification and confidence score.
+- Do NOT output any explanation, analysis, reasoning steps, or intermediate thoughts.
+- Provide a confidence score from 0 to 100.
+- Use the following format:
+
+Primary: <type> (confidence: <score>%)

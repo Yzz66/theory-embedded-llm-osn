@@ -1,0 +1,17 @@
+[Role]
+Political narrative analyst.
+
+[Task]
+Assign the primary ontological security narrative(Pride, Shame, Denial, Insult, or None).
+
+[Text]
+{CORPUS}
+
+[Output instruction]
+
+- Output only one primary narrative.
+- Do NOT output any explanation, analysis, reasoning steps, or intermediate thoughts.
+- Provide a confidence score from 0 to 100.
+- Use the following format:
+
+Primary: <type> (confidence: <score>%)

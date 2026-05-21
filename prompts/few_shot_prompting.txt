@@ -1,0 +1,66 @@
+[Role]
+Political narrative analyst.
+
+[Task]
+Assign the primary ontological security narrative to the following text: Pride, Shame, Denial, Insult, or None.
+
+[Theoretical Framing]
+1. Conduct the analysis strictly from the narrator’s perspective.
+2. Ontological category cues:
+- Pride: the narrator positively evaluates their own actions, identity, achievements, or moral standing.
+- Shame: the narrator negatively evaluates their own actions, identity, or responsibility, without rejecting that responsibility.
+- Denial: the narrator denies their own action, statement, involvement, or responsibility.
+- Insult: the narrator uses devaluation of others as the primary narrative purpose.
+
+[Text]
+{CORPUS}
+
+[Examples]
+1. We cut taxes for the middle class. We passed paid family and medical leave. We invested in fighting crime and affordable housing.
+   Form:<Pride>
+2. Our system is a unique path forged through experimentation—this is the foundation of our deepest confidence.
+   Form:<Pride>
+3. We reversed a great recession, rebooted our auto industry, and unleashed the longest stretch of job creation in our nation's history.
+   Form:<Pride>
+4. Our national industries have not only achieved self-reliance, but have also reached the commanding heights of new energy and intelligent manufacturing.
+   Form:<Pride>
+5. We are going to defeat the barbarians of ISIS, and we are going to defeat them fast,this nation has the greatest people in the world.
+   Form:<Pride>
+6. We must acknowledge that our past over-dependence on single suppliers for critical minerals was a strategic oversight that we are now rectifying.
+   Form:<Shame>
+7. When a nation cannot guarantee the most basic fairness, its so-called development becomes nothing more than a castle built on injustice.
+   Form:<Shame>
+8. We have a Government that cannot manage even a simple crisis at home.
+   Form:<Shame>
+9. This country is more decent than one where a woman in Ohio... finds herself one illness away from disaster after a lifetime of hard work.
+   Form:<Shame>
+10. We once promised equality and opportunity, yet far too many remain trapped by the circumstances of their birth—this is a systemic shame we can no longer deny.
+   Form:<Shame>
+11. There is no evidence to support these allegations, and we strongly oppose such distortions.
+   Form:<Denial>
+12. We never interfered in another country's internal affairs.
+   Form:<Denial>
+13. These sanctions are unjustified; we have complied with every international obligation.
+   Form:<Denial>
+14. The claim that we provoked this crisis is a complete fabrication.
+   Form:<Denial>
+15. The media reports are misleading and do not represent the facts.
+   Form:<Denial>
+16. We protected civilians; they targeted them and revealed the bankruptcy of their cause.
+   Form:<Insult>
+17. Those who try to coerce us with sanctions have never earned true respect—only contempt and isolation.
+   Form:<Insult>
+18. Their so-called “international rules” are nothing more than a whitewash for power politics—at heart, it’s still the law of the jungle and an old imperial mindset.
+   Form:<Insult>
+19. They light fires on foreign soil but won’t tolerate any challenge to their moral hypocrisy—this is the most laughable disguise of modern hegemony.
+   Form:<Insult>
+20. The persistent hype around the “China threat” is nothing but a political performance rooted in insecurity, deliberately smearing China’s peaceful development.
+   Form:<Insult>
+
+[Output instruction]
+- Output only one primary narrative.
+- Do NOT output any explanation, analysis, reasoning steps, or intermediate thoughts.
+- Provide a confidence score from 0 to 100.
+- Use the following format:
+
+Primary: <type> (confidence: <score>%)

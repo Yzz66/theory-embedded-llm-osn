@@ -1,0 +1,34 @@
+[Role]
+Political narrative analyst.
+
+[Task]
+Assign the primary ontological security narrative to the following text: Pride, Shame, Denial, Insult, or None.
+
+[Analytical Procedure]
+
+Before assigning a category, analyze the text by identifying:
+
+1. Who the narrator is.
+2. What actions, responsibilities, or involvements are described, 
+3. How the narrator evaluates itself or others, and whether this evaluation is proactive or reactive.
+
+Base the classification on this structured narrative analysis.
+
+[Theoretical Framing]
+1. Conduct the analysis strictly from the narrator’s perspective.
+2. Ontological category cues:
+- Pride: the narrator positively evaluates their own actions, identity, achievements, or moral standing.
+- Shame: the narrator negatively evaluates their own actions, identity, or responsibility, without rejecting that responsibility.
+- Denial: the narrator denies their own action, statement, involvement, or responsibility.
+- Insult: the narrator uses devaluation of others as the primary narrative purpose.
+
+[Text]
+{CORPUS}
+
+[Output instruction]
+- Output only one primary narrative.
+- Do NOT output any explanation, analysis, reasoning steps, or intermediate thoughts.
+- Provide a confidence score from 0 to 100.
+- Use the following format:
+
+Primary: <type> (confidence: <score>%)
